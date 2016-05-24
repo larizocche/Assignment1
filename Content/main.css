@@ -1,0 +1,19 @@
+/* css goes here */
+
+.nav
+{
+    background-color: darkseagreen;
+}
+body
+{
+    background-color: #C8E6C9;;
+}
+container
+{
+    width: 980px;
+	margin-right: auto;
+	margin-left: auto;
+	border: 2px solid #666666;
+	border-radius: 20px;
+	padding: 10px;
+}
