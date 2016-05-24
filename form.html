@@ -7,13 +7,14 @@
     <!--Bootstrap -->
      <link href="Bootstrap/css/bootstrap.css" rel="stylesheet">
     <!-- CSS Section -->
-    <link rel="stylesheet" href="Content/main.css"
+    <link rel="stylesheet" href="Content/main.css">
+     <link rel="stylesheet" href="font-awesome/css/font-awesome.css">
 </head>
 <body>
    <nav class="navbar navbar-default">
   <div class="container-fluid">
     <div class="navbar-header">
-        <img alt="Brand" src="/Users/lari/Desktop/Assignment 1/Assets/logo3.png" width="80" height="60">
+        <img alt="Logo" src="/Users/lari/Desktop/Assignment 1/Assets/logo3.png" width="70" height="60">
      
                       <ul class="nav navbar-nav">
                     <li>
@@ -33,14 +34,10 @@
     <div class="container">
         <h1>Contact me</h1>
  
-
-   
-
-   
    
     <form class= "form-horizontal" name = "contactForm" action="index.html" onsubmit="return validateForm()" method="post" >
        <div class="row>"
-                    <div class="col-md-1">
+                    <div class="col-md-6">
         <div class="form-group">
             
             <div class="col-xs-4">
@@ -81,25 +78,29 @@
               </div>
               
               <button type="button" class="btn btn-success">Submit Message</button>
-                <button type="reset" class="btn btn-success">Clear</button>
-              
-             
-    
-              
+                <button type="reset" class="btn btn-success">Clear</button>       
        </div>
-
-
-        
-       
-        
-     
-    
-    
     </form>
+    <br>
+    <!-- Font-awesome brand icons -->
+   <span class="fa-stack fa-lg">
+<a href="https://www.facebook.com/larissa.zocche"> <i class="fa fa-facebook-square fa-4x" aria-hidden="true"></i></a>
+<a href="https://www.linkedin.com/in/larissa-zocche-59a09155?trk=nav_responsive_tab_profile_pic"><i class="fa fa-linkedin fa-4x" aria-hidden="true""></i> </a>
+ <a href="https://twitter.com/_larizinha"> <i class="fa fa-twitter fa-4x" aria-hidden="true"></i></a>
+   </span>
+    
+    
+    
+       
+  
     
     <!-- JavaScript Section -->
     <script src="Scripts/main.js"></script>
     <script src="Scripts/form.js"></script>
+     <!-- Includes jQuery - JavaScript requiste for Bootstrap -->
+    <script src="Bootstrap/js/jquery-1.12.4.min.js"></script>
+    <!-- Bootstrap JavaScript -->
+    <script src="Bootstrap/js/bootstrap.min.js"></script>
 </body>
 </html>
                     
