@@ -1,12 +1,12 @@
 /* css goes here */
-
-.nav
+.container-fluid
 {
-    background-color: darkseagreen;
+	background-color: #DCEDC8;
+
 }
 body
 {
-    background-color: #C8E6C9;;
+    background-color: lightgray;
 }
 container
 {

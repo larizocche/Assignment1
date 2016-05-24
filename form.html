@@ -10,17 +10,12 @@
     <link rel="stylesheet" href="Content/main.css"
 </head>
 <body>
-  <div class="container">
-    
-            <div class="navbar-header">
-                
-                <a class="navbar-brand">
-                    <img alt="Logo" src="Assets/logo2.png" width="80" height="60">
-                </a>
-            </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
+   <nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+        <img alt="Brand" src="/Users/lari/Desktop/Assignment 1/Assets/logo3.png" width="80" height="60">
+     
+                      <ul class="nav navbar-nav">
                     <li>
                         <a href="index.html">Main Page</a>
                     </li>
@@ -31,10 +26,9 @@
                         <a href="form.html">Contact</a>
                     </li>
                 </ul>
-            </div>
-        </div>
-    </nav>
-    <br>
+    </div>
+  </div>
+</nav>
    
     <div class="container">
         <h1>Contact me</h1>
@@ -44,26 +38,63 @@
 
    
    
-    <form name = "contactForm" action="index.html" onsubmit="return validateForm()" method="post" >
+    <form class= "form-horizontal" name = "contactForm" action="index.html" onsubmit="return validateForm()" method="post" >
+       <div class="row>"
+                    <div class="col-md-1">
         <div class="form-group">
-            <label for="fname">First Name: </label>
-            <input name="txtFName" size="25" type="text">
+            
+            <div class="col-xs-4">
+                
+            <label for="fname" class="col-sm-2 control-label">First Name: </label>
+             <div class="col-sm-10">
+            <input type="text" class="form-control" name="txtFName">
+       </div>
         </div>
-        <div class="form-group">
-             <label for="lname">Last Name: </label>
-             <input name="txtLName" size="25" type="text">
-	    </div>
-        <div class="form-group">     
-             <label for="email">Email: </label>
-             <input name="txtEmail" size="30"  type="text" placeholder="abc@gmail.com">
+            </div>
+
+         <div class="form-group">
+                <div class="col-xs-4">
+            <label for="lname" class="col-sm-2 control-label">Last Name: </label>
+             <div class="col-sm-10">
+            <input type="text" class="form-control" name="txtFName"  >
+       </div>
         </div>
-        <div class="form-group">  
-            <label for="message">Message: </label>
-	        <textarea cols="50" name="txtMessage" rows="8" placeholder="--Feel free to ask anything about my professional experience--"></textarea>
+              </div>
+              
+              <div class="form-group">
+                <div class="col-xs-4">
+            <label for="email" class="col-sm-2 control-label">E-mail </label>
+             <div class="col-sm-10">
+            <input type="email" class="form-control" name="txtEmail" placeholder="abc@gmail.com" >
+       </div>
         </div>
+              </div>
+              
+              
+              <div class="form-group">
+                <div class="col-xs-4">
+            <label for="message" class="col-sm-2 control-label">Message </label>
+             <div class="col-sm-10">
+                 <textarea class="form-control" rows="10" name="txtMessage" placeholder="--Feel free to ask anything about my professional experience--"></textarea>
+       </div>
+        </div>
+              </div>
+              
+              <button type="button" class="btn btn-success">Submit Message</button>
+                <button type="reset" class="btn btn-success">Clear</button>
+              
+             
     
-    <button name="btnSubmit" type="submit">Submit Message</button>
-    <button name="btnReset" type="reset">Clear</button>
+              
+       </div>
+
+
+        
+       
+        
+     
+    
+    
     </form>
     
     <!-- JavaScript Section -->
