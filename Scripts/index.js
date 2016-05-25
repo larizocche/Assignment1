@@ -31,6 +31,11 @@ function writeToIntroduction(){
     }
     writeToIntroduction();
     
+    function footer () {
+        var footer = document.getElementById("footer");
+        footer.textContent = "Larissa Zocche - Portfolio - COMP125 - Summer 2016 - Centennial College"
+    }
+    footer();
 }());
 
 
