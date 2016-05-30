@@ -3,8 +3,18 @@
 {
   margin-top: 30px;
   margin-bottom: 30px
+ 
 }
-
+.fa 
+{
+  color: #3b5998;
+  
+}
+.thumbnail {
+    float: left;
+    margin-right: 10px;
+    display: block;
+}
 
 
 

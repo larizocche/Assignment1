@@ -8,10 +8,15 @@
 (function () {
     "use strict";
     //index page
-    var introduction = document.getElementById("introduction");
-    var experience = document.getElementById("experience");
-    var skills = document.getElementById("skills");
-    var objectives = document.getElementById("objectives");
+    var highlights1 = document.getElementById("highlights1");
+    var highlights2 = document.getElementById("highlights2");
+    var highlights3 = document.getElementById("highlights3");
+    var education1 = document.getElementById("education1");
+    var education1A = document.getElementById("education1A");
+    var education2 = document.getElementById("education2");
+    var education2A = document.getElementById("education2A");
+    var education3 = document.getElementById("education3");
+    var education3A = document.getElementById("education3A");
 
     //projects
     var researchDescription = document.getElementById("researchDescription");
@@ -22,36 +27,61 @@
     //define your paragraphs array
     var paragraphs = [];
     //data for the main page
-    paragraphs[0] = "I am an enthusiastic graduate of Biology. I have significant work expertise through internships, a Masters in Biotechnology and a volunteer position in a research lab.";
-    paragraphs[1] = "My past experiences as a Biology Teacher (delivering lectures, preparing differentiated lessons), Sales Representative (preparing sales presentations that explained product specifications and applications) and in a restaurant I developed my verbal and written skills, taught me about managing multiple priorities and how to multi task in a fast paced environment. In my most recent position as Quality Control Technician I have learned how to maintain accuracy in a high volume and repetitive work environment that required strong attention to details and where I have explored my ability for versatility and flexibility.";
-    paragraphs[2] = "I am highly motivated, patient, always willing to acquire new knowledge and willing to learn with  people with different opinions and backgrounds.";
-    paragraphs[3] = "My next goal is to graduate as a Software Engineer Technician and find a good job in the IT industry.";
+    paragraphs[0] = "Methodical and strong organizational skills";
+    paragraphs[1] = "Excellent attention to details";
+    paragraphs[2] = "Highly motivated, patient, always willing to acquire new knowledge and willing to learn with  people with different opinions and backgrounds.";
+    paragraphs[3] = "B. S.c in Biological Sciences";
+    paragraphs[4] = "Pontifical Catholic University of Paraná, Brazil.";
+    paragraphs[5] = "Master’s in Biotechnology";
+    paragraphs[6] = "Pequeno Príncipe University, Brazil";
+    paragraphs[7] = "Software Engineering Technician";
+    paragraphs[8] = "Centennial College, Toronto, Canada";
+
+    
+    
     //data for the projects page
-    paragraphs[4] = "Development and characterization of a new inbred transgenic rat strain expressing DsRed monomeric fluorescent protein. Authors: Montanari, S.; Wang, X-H.; Yannarelli, G.; Dayan, V.; Berger, T.; Zocche, L.; Kobayashi, E.;  Viswanathan, S.; Keating, A.";
-    paragraphs[5] = "Pap Test as the First Step in Screening Genetic Stability in Cell-Based Therapy. Authors: Carvalho, K.A.T.; Zocche, Larissa, Irioda, A.C., Souza, C., Ferreira, R.J.; Aliprandini, E.; Cunha, R.C.; Francisco, J.C.; Guarita-Souza, L.C.; Malvezzi, M.; Beltrame, M.; Mesquita, L.; Kuczera, D.; Vargas, R.";
-    paragraphs[6] = "Functional Outcome of Bone Marrow Stem Cells (CD45+/CD34−) After Cell Therapy in Acute Spinal Cord Injury: In Exercise Training and in Sedentary Rats.;Authors: Carvalho, K. A. T.; Cunha, R. C.; Vialle E.N; Osiecki, R.; Moreira, GHG; Simeoni, R. B.; Francisco, J. C.; Guarita-Souza, L. C.; Oliveira, L.; Zocche, Larissa; Olandoski, M.";
+    paragraphs[9] = "Development and characterization of a new inbred transgenic rat strain expressing DsRed monomeric fluorescent protein. Authors: Montanari, S.; Wang, X-H.; Yannarelli, G.; Dayan, V.; Berger, T.; Zocche, L.; Kobayashi, E.;  Viswanathan, S.; Keating, A.";
+    paragraphs[10] = "Pap Test as the First Step in Screening Genetic Stability in Cell-Based Therapy. Authors: Carvalho, K.A.T.; Zocche, Larissa, Irioda, A.C., Souza, C., Ferreira, R.J.; Aliprandini, E.; Cunha, R.C.; Francisco, J.C.; Guarita-Souza, L.C.; Malvezzi, M.; Beltrame, M.; Mesquita, L.; Kuczera, D.; Vargas, R.";
+    paragraphs[11] = "Functional Outcome of Bone Marrow Stem Cells (CD45+/CD34−) After Cell Therapy in Acute Spinal Cord Injury: In Exercise Training and in Sedentary Rats.;Authors: Carvalho, K. A. T.; Cunha, R. C.; Vialle E.N; Osiecki, R.; Moreira, GHG; Simeoni, R. B.; Francisco, J. C.; Guarita-Souza, L. C.; Oliveira, L.; Zocche, Larissa; Olandoski, M.";
 
     //check if the paragraphs exists
-    if (introduction) {
-        introduction.textContent = paragraphs[0];
+    //Index page
+    if (highlights1) {
+        highlights1.textContent = paragraphs[0];
     }
-    if (experience) {
-        experience.textContent = paragraphs[1];
+    if (highlights2) {
+        highlights2.textContent = paragraphs[1];
     }
-    if (skills) {
-        skills.textContent = paragraphs[2]
+    if (highlights3) {
+        highlights3.textContent = paragraphs[2]
     }
-    if (objectives) {
-        objectives.textContent = paragraphs[3]
+    if (education1) {
+        education1.textContent = paragraphs[3]
     }
+    if (education1A) {
+        education1A.textContent = paragraphs[4]
+    }
+    if (education2) {
+        education2.textContent = paragraphs[5]
+    }
+    if (education2A) {
+        education2A.textContent = paragraphs[6]
+    }
+     if (education3) {
+        education3.textContent = paragraphs[7]
+    }
+    if (education3A) {
+        education3A.textContent = paragraphs[8]
+    }
+    //PROJECTS PAGE
     if (researchDescription) {
-        researchDescription.textContent = paragraphs[4]
+        researchDescription.textContent = paragraphs[9]
     }
     if (researchDescription2) {
-        researchDescription2.textContent = paragraphs[5]
+        researchDescription2.textContent = paragraphs[10]
     }
     if (researchDescription3) {
-        researchDescription3.textContent = paragraphs[6]
+        researchDescription3.textContent = paragraphs[11]
     }
 
 //if a form field is empty, this function shows a message and prevent the form from being submitted.
